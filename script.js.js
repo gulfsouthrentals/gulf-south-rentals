@@ -21,4 +21,31 @@ const today = new Date();
 const formattedDate = today.toISOString().split("T")[0];
 rentalDate.setAttribute("min", formattedDate);
 
+bookingForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    formMessage.textContent = "Submitting your rental request...";
+
+    try {
+        const response = await fetch(bookingForm.action, {
+            method: bookingForm.method,
+            body: new FormData(bookingForm),
+            headers: {
+                Accept: "application/json"
+            }
+        });
+
+        if (response.ok) {
+            window.location.href =
+                "https://gulfsouthrentalsllc.com/waiver.html";
+        } else {
+            formMessage.textContent =
+                "There was a problem submitting your request. Please try again.";
+        }
+    } catch (error) {
+        formMessage.textContent =
+            "There was a connection problem. Please try again.";
+    }
+});
+
 
