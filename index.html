@@ -236,38 +236,76 @@
                         >
                     </div>
                 </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <div class="form-group">
-    <label>Single Kayaks ($55)</label>
-    <input
-        type="number"
-        name="singleKayaks"
-        min="0"
-        value="0"
-    >
-</div>
+<!-- Rental Duration -->
 
 <div class="form-group">
-    <label>Tandem Kayaks ($65)</label>
-    <input
-        type="number"
-        name="tandemKayaks"
-        min="0"
-        value="0"
-    >
+    <label for="rentalType">Rental Duration</label>
+
+    <select id="rentalType" name="rentalType" required>
+        <option value="">Select Duration</option>
+        <option value="Hourly">Hourly</option>
+        <option value="Half Day">Half Day</option>
+        <option value="Full Day">Full Day</option>
+    </select>
 </div>
 
-<div class="form-group">
-    <label>Pedal Kayaks ($75)</label>
-    <input
-        type="number"
-        name="pedalKayaks"
-        min="0"
-        value="0"
-    >
+<!-- Kayak Quantities -->
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label>Single Kayaks</label>
+        <input
+            type="number"
+            name="singleKayaks"
+            min="0"
+            value="0"
+        >
+    </div>
+
+    <div class="form-group">
+        <label>Tandem Kayaks</label>
+        <input
+            type="number"
+            name="tandemKayaks"
+            min="0"
+            value="0"
+        >
+    </div>
+
 </div>
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label>Pedal Boats</label>
+        <input
+            type="number"
+            name="pedalBoats"
+            min="0"
+            value="0"
+        >
+    </div>
+<div class="pricing-info">
+    <h3>Rental Rates</h3>
+
+    <p>
+        <strong>Single Kayak</strong><br>
+        Hourly: $15 | Half Day: $35 | Full Day: $55
+    </p>
+
+    <p>
+        <strong>Tandem Kayak</strong><br>
+        Hourly: $20 | Half Day: $45 | Full Day: $65
+    </p>
+
+    <p>
+        <strong>Pedal Boat</strong><br>
+        Hourly: $25 | Half Day: $50 | Full Day: $85
+    </p>
+</div>
+</div>
+               
                     </div>
                 </div>
 
