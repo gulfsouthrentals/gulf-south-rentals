@@ -179,11 +179,11 @@
 		action="https://formspree.io/f/meeyajbb"
 		method="post"
 >
-				<input type="hidden" name="_next" value="https://gulfsouthrentalsllc.com/waiver.html">
+				
 	<input
     type="hidden"
-    name="_subject"
-    value="New Gulf South Rentals Booking Request"
+    name="_next"
+    value="https://gulfsouthrentalsllc.com/waiver.html"
 >
 
 <input
@@ -239,34 +239,35 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="kayakType">Kayak type</label>
+                        <div class="form-group">
+    <label>Single Kayaks ($55)</label>
+    <input
+        type="number"
+        name="singleKayaks"
+        min="0"
+        value="0"
+    >
+</div>
 
-                        <select id="kayakType" name="kayakType" required>
-                            <option value="">Select a kayak</option>
-                            <option value="Single Kayak">
-                                Single Kayak — $55
-                            </option>
-                            <option value="Tandem Kayak">
-                                Tandem Kayak — $65
-                            </option>
-                            <option value="Pedal Kayak">
-                                Pedal Kayak — $75
-                            </option>
-                        </select>
-                    </div>
+<div class="form-group">
+    <label>Tandem Kayaks ($65)</label>
+    <input
+        type="number"
+        name="tandemKayaks"
+        min="0"
+        value="0"
+    >
+</div>
 
-                    <div class="form-group">
-                        <label for="quantity">Quantity</label>
-
-                        <input
-                            type="number"
-                            id="quantity"
-                            name="quantity"
-                            min="1"
-                            max="6"
-                            value="1"
-                            required
-                        >
+<div class="form-group">
+    <label>Pedal Kayaks ($75)</label>
+    <input
+        type="number"
+        name="pedalKayaks"
+        min="0"
+        value="0"
+    >
+</div>
                     </div>
                 </div>
 
@@ -277,10 +278,13 @@
                         id="message"
                         name="message"
                         rows="5"
-                        placeholder="Tell us about your trip or ask a question."
+                        placeholder="Tell us about your upcoming trip or ask a question."
                     ></textarea>
                 </div>
-
+<p class="reservation-notice">
+Reservations are not confirmed until availability is verified and payment is received.
+A secure payment link will be sent by email or text after your request is reviewed.
+</p>
                 <button type="submit" class="submit-button">
                     Submit Rental Request
                 </button>
